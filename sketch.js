@@ -75,13 +75,13 @@ if(keyDown("LEFT_ARROW"))
   astronaut.velocityY = 0;
  }
 
-if(keyDown("m"))
+if(keyDown("M"))
  {
   astronaut.addAnimation("moving",move);
   astronaut.changeAnimation("moving");
   astronaut.y = 450;
-  astronaut.velocityX = 0;
-  astronaut.velocityY = 0;
+  astronaut.velocityX = 0.5;
+  astronaut.velocityY = 0.5;
  }
   
   if(keyDown("D"))
