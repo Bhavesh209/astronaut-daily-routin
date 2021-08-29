@@ -76,8 +76,8 @@ if(keyDown("LEFT_ARROW"))
 
 if(keyDown("M"))
  {
-  astronaut.addAnimation("drinking",drink)
-  astronaut.changeAnimation("drinking")
+  astronaut.addAnimation("moving",move)
+  astronaut.changeAnimation("moving")
   astronaut.y = 450
   astronaut.velocityX = 0
   astronaut.velocityY = 0
