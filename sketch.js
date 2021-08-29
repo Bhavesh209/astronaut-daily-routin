@@ -33,8 +33,8 @@ function draw()
   text("Down Arrow = Gymming",20, 70);
   text("Left Arrow = Eating",20, 85);
   text("Right Arrow = Bathing",20, 100);
-  text("m key = Moving",20, 115);
-  text("d key = drinking",20, 130);
+  text("M key = Moving",20, 115);
+  text("D key = Drinking",20, 130);
   
   edges = createEdgeSprites();
   astronaut.bounceOff(edges);
