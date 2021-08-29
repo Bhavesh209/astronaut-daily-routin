@@ -34,6 +34,7 @@ function draw()
   text("Left Arrow = Eating",20, 85);
   text("Right Arrow = Bathing",20, 100);
   text("m key = Moving",20, 115);
+  text("d key = drinking",20, 130);
   
   edges = createEdgeSprites();
   astronaut.bounceOff(edges);
@@ -82,6 +83,16 @@ if(keyDown("M"))
   astronaut.velocityX = 0
   astronaut.velocityY = 0
  }
+  
+  if(keyDown("D"))
+ {
+  astronaut.addAnimation("drinking",drink)
+  astronaut.changeAnimation("drinking")
+  astronaut.y = 450
+  astronaut.velocityX = 0
+  astronaut.velocityY = 0
+ }
+
 
  drawSprites();
 }
