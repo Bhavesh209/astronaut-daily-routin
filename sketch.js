@@ -1,4 +1,4 @@
-var bg,sleep,move,brush,gym,eat,drink,bath,bgs,astronaut,edges;
+var bg,sleep,move,brush,gym,eat,drink,bath,astronaut,edges;
 
 function preload()
 {
@@ -16,9 +16,9 @@ function setup()
 {
   createCanvas(800,600);
 
-  astronaut = createSprite(400,500)
-  astronaut.addAnimation("sleeping",sleep)
-  astronaut.scale = 0.1
+  astronaut = createSprite(400,500);
+  astronaut.addAnimation("sleeping",sleep);
+  astronaut.scale = 0.1;
 }
 
 function draw() 
@@ -26,7 +26,7 @@ function draw()
   background(bg);
 
    textSize(20);
-  fill("white")
+  fill("white");
   text("Instructions:",20, 35);
   textSize(15);
   text("Up Arrow = Brushing",20, 55);
@@ -41,56 +41,56 @@ function draw()
   
   if(keyDown("UP_ARROW"))
   {
-    astronaut.addAnimation("brushing",brush)
-    astronaut.changeAnimation("brushing")
-    astronaut.y = 450
-    astronaut.velocityX = 0
-    astronaut.velocityY = 0
+    astronaut.addAnimation("brushing",brush);
+    astronaut.changeAnimation("brushing");
+    astronaut.y = 450;
+    astronaut.velocityX = 0;
+    astronaut.velocityY = 0;
   }
 
  if(keyDown("DOWN_ARROW"))
  {
-  astronaut.addAnimation("gymming",gym)
-  astronaut.changeAnimation("gymming")
-  astronaut.y = 450
-  astronaut.velocityX = 0
-  astronaut.velocityY = 0
+  astronaut.addAnimation("gymming",gym);
+  astronaut.changeAnimation("gymming");
+  astronaut.y = 450;
+  astronaut.velocityX = 0;
+  astronaut.velocityY = 0;
  }
 
 if(keyDown("RIGHT_ARROW"))
  {
-  astronaut.addAnimation("bathing",bath)
-  astronaut.changeAnimation("bathing")
-  astronaut.y = 450
-  astronaut.velocityX = 0
-  astronaut.velocityY = 0
+  astronaut.addAnimation("bathing",bath);
+  astronaut.changeAnimation("bathing");
+  astronaut.y = 450;
+  astronaut.velocityX = 0;
+  astronaut.velocityY = 0;
  }
 
 if(keyDown("LEFT_ARROW"))
  {
-  astronaut.addAnimation("eating",eat)
-  astronaut.changeAnimation("eating")
-  astronaut.y = 450
-  astronaut.velocityX = 0
-  astronaut.velocityY = 0
+  astronaut.addAnimation("eating",eat);
+  astronaut.changeAnimation("eating");
+  astronaut.y = 450;
+  astronaut.velocityX = 0;
+  astronaut.velocityY = 0;
  }
 
-if(keyDown("M"))
+if(keyDown("m"))
  {
-  astronaut.addAnimation("moving",move)
-  astronaut.changeAnimation("moving")
-  astronaut.y = 450
-  astronaut.velocityX = 0
-  astronaut.velocityY = 0
+  astronaut.addAnimation("moving",move);
+  astronaut.changeAnimation("moving");
+  astronaut.y = 450;
+  astronaut.velocityX = 0;
+  astronaut.velocityY = 0;
  }
   
   if(keyDown("D"))
  {
-  astronaut.addAnimation("drinking",drink)
-  astronaut.changeAnimation("drinking")
-  astronaut.y = 450
-  astronaut.velocityX = 0
-  astronaut.velocityY = 0
+  astronaut.addAnimation("drinking",drink);
+  astronaut.changeAnimation("drinking");
+  astronaut.y = 450;
+  astronaut.velocityX = 0;
+  astronaut.velocityY = 0;
  }
 
 
